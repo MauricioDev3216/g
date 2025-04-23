@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria Geral</title>
+  <link rel="stylesheet" href="styleGal.css" />
+</head>
+<body>
+  <header>
+    <h1>Galeria Geral</h1>
+    <nav>
+      <a href="index.html" class="botao">Voltar para o Site Principal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <h2>Projetos, Hobbies e Ilustrações</h2>
+      <h2>Projetos</h2>
+      <div class="grid">
+        <img src="projevee.PNG" alt="Projeto 3" onclick="abrirPopup(this.src, 'Site de informações sobre pokemon para um projeto escolar. Este site foi feito durante um projeto escolar no tecnico de Tecnologia da Informação. Coordenado pelo professor Jeferson, fiz este website para ser um guia das evoluções do pokemon Eevee, acesse o site e veja você mesmo:')">
+        <img src="3.jpg" alt="Projeto 4" onclick="abrirPopup(this.src, 'Site institucional com tema tradicionalista.')">
+        <img src="barcas.jpg" alt="Projeto 7" onclick="abrirPopup(this.src, 'Ilustração de uma barca estilizada.')">
+        <img src="vcensinos.jpg" alt="Projeto 5" onclick="abrirPopup(this.src, 'Plataforma educacional para cursos online.')">
+        <img src="vestapee.jpg" alt="Projeto 6" onclick="abrirPopup(this.src, 'Página de e-commerce da loja VestAppe.')">
+        </div>
+        <h2>Hobbies</h2>
+        <div class="grid">
+        <img src="6.jpg" alt="Hobby 1" onclick="abrirPopup(this.src, 'Arte conceitual inspirada em ficção científica.')">
+        <img src="7.jpg" alt="Hobby 2" onclick="abrirPopup(this.src, 'Retrato digital feito em tempo livre.')">
+        <img src="8.jpg" alt="Hobby 3" onclick="abrirPopup(this.src, 'Estudo de cores com personagens.')">
+        <img src="9.jpg" alt="Hobby 4" onclick="abrirPopup(this.src, 'Cena de fantasia com dragão.')">
+        <img src="10.jpg" alt="Hobby 5" onclick="abrirPopup(this.src, 'Pintura digital de paisagem.')">
+      </div>
+    </section>
+  </main>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <img id="popup-img" src="" alt="Imagem ampliada" />
+      <div class="popup-descricao" id="popup-descricao"></div>
+    </div>
+    <button class="fechar" onclick="fecharPopup()">X</button>
+  </div>
+
+  <footer>
+    <p>© 2025 - Galeria de Projetos e Hobbies</p>
+  </footer>
+
+  <script>
+    function abrirPopup(imagem, descricao) {
+      document.getElementById('popup-img').src = imagem;
+      document.getElementById('popup-descricao').textContent = descricao;
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function fecharPopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

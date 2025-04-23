@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Meu Portfólio</h1>
+    <nav>
+      <a class="botao" href="#inicio">Início</a>
+      <a class="botao" href="#sobre">Sobre mim</a>
+      <a class="botao" href="#galeria">Galeria</a>
+      <a class="botao" href="#curriculo">Currículo</a>
+      <a class="botao" href="#contato">Contato</a>
+       
+    </nav>
+  </header>
+
+  <main>
+    <!-- INÍCIO -->
+    <section class="pagina" id="inicio">
+      <h2>Bem-vindo!</h2>
+      <p>Meu nome é Maurício de Campos, tenho 16 anos e uso este site como currículo e portifólio para futuros empregos. Esse é meu portfólio! Explore as seções acima ou role para baixo</p>
+      <blockquote>"A tecnologia move o mundo." - Steve Jobs</blockquote>
+
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section class="pagina" id="sobre">
+      <h2>Sobre mim</h2>
+
+      <p>Sou um desenvolvedor front-end apaixonado por criar interfaces modernas, funcionais e responsivas. Tenho experiência com HTML, CSS, JavaScript e estou sempre aprendendo novas tecnologias para me manter atualizado.</p>
+
+
+      <h3>Habilidades</h3>
+<ul>
+  <li>HTML, CSS e JavaScript</li>
+  <li>React.js (básico/intermediário)</li>
+  <li>Git e GitHub</li>
+  <li>Responsive Design</li>
+  <li>Java e Poo1></Java>li>
+</ul>
+<p>­</p>
+<h3>Ferramentas</h3>
+<ul>
+  <li>VS Code</li>
+  <li>NetBeans</li>
+  <li>Photoshop</li>
+  <li>Ilustrator</li>
+  <li>Xampp</li>
+  <li>Workbench</li>
+</ul>
+<p>­</p>
+<h3>Objetivo</h3>
+<p>Busco oportunidades como desenvolvedor júnior em uma equipe colaborativa, onde eu possa crescer, aprender e contribuir com projetos reais.</p>
+<p>­</p>
+    
+<h3>Informações Gerais</h3>
+
+      <p>Sou uma pessoa criativa, curiosa e motivada.</p>
+      <img src="1.jpg" alt="Imagem 1" />
+      <p>Gosto de aprender novas tecnologias.</p>
+      <img src="2.jpg" alt="Imagem 2" />
+      <p>Tenho interesse em desenvolvimento web e design, além de java e design grafico.</p>
+      <img src="3.jpg" alt="Imagem 3" /> 
+      <p>Desenho feito por mim no ilustrator e recortado no Photoshop</p>
+      <img src="p.jpg" alt="design"/>
+      
+      <p>Sou bom em resolver problemas.</p>
+      <img src="4.jpg" alt="Imagem 4" />
+      <p>Adoro trabalhar em equipe e colaborar com ideias.</p>
+      <img src="5.jpg" alt="Imagem 5" />
+    </section>
+
+    <section class="pagina" id="galeria">
+      <h2>Bem-vindo a minha galeria</h2>
+      <p>explore meus projetos e hobbies na minha galeria</p>
+      <a href="galeria.html" class="botao">Ver Galeria de Projetos e Hobbies</a>
+
+
+    </section>
+
+      <!--CURRICULO-->
+      <section class="pagina" id="curriculo">
+        <h2>Currículo</h2>
+        <p>Dê uma olhada no meu currículo ou baixe ele em PDF:</p>
+      
+        <!-- Imagem do currículo -->
+        <img src="curriculo.jpg" alt="Currículo" class="curriculo-img" />
+      
+        <!-- Botão para download do PDF -->
+        <a href="curriculo.pdf" download class="botao-verde botao-download">📄 Baixar PDF</a>
+
+      </section>
+      
+
+
+    <!-- CONTATO -->
+    <section class="contato-section" id="contato">
+      <h2>Contato</h2>
+    
+      <form action="https://formsubmit.co/mauriciodecamposhihi@gmail.com" method="POST">
+        <div class="campo">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+        </div>
+    
+        <div class="campo">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+        </div>
+    
+        <div class="campo">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+        </div>
+    
+        <button type="submit" class="botao">Enviar</button>
+      </form>
+    <P> ㅤ</P>
+    <h3>Informações Importantes</h3>
+
+    <p>
+      Instagram:
+      <a href="https://www.instagram.com/iae.samurai" target="_blank" rel="noopener noreferrer">
+        @iae.samurai
+      </a>
+    </p>
+    
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/maur%C3%ADcio-de-campos-148005323" target="_blank" rel="noopener noreferrer">
+        linkedin.com/in/maurício-de-campos-148005323
+      </a>
+    </p>
+    
+    <p>
+      GitHub:
+      <a href="https://github.com/MauricioDev3216" target="_blank" rel="noopener noreferrer">
+        MaurícioDev3216
+      </a>
+    </p>
+    </section>
+
+
+
+  
+  </main>
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.pagina h2, .pagina p, .pagina img', {
+      origin: 'bottom',
+      distance: '40px',
+      duration: 800,
+      interval: 100,
+      reset: false
+    });
+  </script>
+</body>
+</html>
+
+<footer style="text-align: center; margin-top: 40px; color: #4fc3f7;">
+  <p>&copy; 2025 Maurício de Campos. Todos os direitos reservados.</p>
+</footer>
