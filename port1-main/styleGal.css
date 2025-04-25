@@ -117,3 +117,20 @@ body {
     color: #888;
   }
   
+
+  .botao-link {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .botao-link:hover {
+    background-color: #00cccc;
+  }
+  

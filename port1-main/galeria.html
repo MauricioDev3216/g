@@ -27,12 +27,23 @@
         </div>
         <h2>Hobbies</h2>
         <div class="grid">
-        <img src="6.jpg" alt="Hobby 1" onclick="abrirPopup(this.src, 'Arte conceitual inspirada em ficção científica.')">
-        <img src="7.jpg" alt="Hobby 2" onclick="abrirPopup(this.src, 'Retrato digital feito em tempo livre.')">
-        <img src="8.jpg" alt="Hobby 3" onclick="abrirPopup(this.src, 'Estudo de cores com personagens.')">
-        <img src="9.jpg" alt="Hobby 4" onclick="abrirPopup(this.src, 'Cena de fantasia com dragão.')">
-        <img src="10.jpg" alt="Hobby 5" onclick="abrirPopup(this.src, 'Pintura digital de paisagem.')">
+        <img src="6.jpg" alt="Hobby 1" onclick="abrirPopup(this.src, 'Jogar hand e estar com meus amigos (boas relações)')">
+        <img src="7.jpg" alt="Hobby 2" onclick="abrirPopup(this.src, 'Ouvir música enquanto programo.(concentração)')">
+        <img src="8.jpg" alt="Hobby 3" onclick="abrirPopup(this.src, 'Explorar e criar novos jogos indie.(gamemaker engine)')">
+        <img src="9.jpg" alt="Hobby 4" onclick="abrirPopup(this.src, 'Produção musical')">
+        <img src="10.jpg" alt="Hobby 5" onclick="abrirPopup(this.src, ' Radialista na Rádio CSL (e vice-presidente ')">
       </div>
+      <h2>Ilustraçõs</h2>
+      <div class="grid">
+       
+        <img src="pernalonga.jpeg" alt="Hobby 6" onclick="abrirPopup(this.src, 'Ilustração digital de personagem.')">
+        <img src="VersaoEle.jpeg" alt="Hobby 7" onclick="abrirPopup(this.src, 'Ilustração digital de personagem.')">
+        <img src="taz (1).jpeg" alt="Hobby 8" onclick="abrirPopup(this.src, 'Ilustração digital de personagem.')">
+        <img src="picachu.jpg" alt="Hobby 9" onclick="abrirPopup(this.src, 'Ilustração digital de personagem.')">
+        <img src="herois (1).jpeg" alt="Hobby 10" onclick="abrirPopup(this.src, 'Ilustração digital de herois.')">
+        
+      </div>
+
     </section>
   </main>
 
@@ -41,7 +52,8 @@
     <div class="popup-content">
       <img id="popup-img" src="" alt="Imagem ampliada" />
       <div class="popup-descricao" id="popup-descricao"></div>
-    </div>
+      <a id="popup-link" class="botao-link" href="#" target="_blank" style="display: none;">Visitar site</a>
+      </div>
     <button class="fechar" onclick="fecharPopup()">X</button>
   </div>
 
@@ -50,11 +62,21 @@
   </footer>
 
   <script>
-    function abrirPopup(imagem, descricao) {
-      document.getElementById('popup-img').src = imagem;
-      document.getElementById('popup-descricao').textContent = descricao;
-      document.getElementById('popup').style.display = 'flex';
-    }
+   function abrirPopup(imagem, descricao, link = null) {
+  document.getElementById('popup-img').src = imagem;
+  document.getElementById('popup-descricao').textContent = descricao;
+
+  const popupLink = document.getElementById('popup-link');
+  if (link) {
+    popupLink.href = link;
+    popupLink.style.display = 'inline-block';
+  } else {
+    popupLink.style.display = 'none';
+  }
+
+  document.getElementById('popup').style.display = 'flex';
+}
+
 
     function fecharPopup() {
       document.getElementById('popup').style.display = 'none';
